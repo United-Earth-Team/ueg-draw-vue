@@ -1,0 +1,9 @@
+@import url('https://fonts.sourcegcdn.com/css?family=Noto+Sans|Noto+Sans+SC|Noto+Sans+Mono|Rajdhani');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  scroll-behavior: smooth;
+}
