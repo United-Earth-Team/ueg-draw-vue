@@ -1,0 +1,10 @@
+name: Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  CI:
+    uses: United-Earth-Team/ueg-draw-vue/.github/workflows/ci.yml@main

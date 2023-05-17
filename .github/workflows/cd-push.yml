@@ -1,0 +1,10 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  CI:
+    uses: United-Earth-Team/ueg-draw-vue/.github/workflows/ci.yml@main

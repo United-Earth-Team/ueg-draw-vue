@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  workflow_call
+
+jobs:
+  Check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download repository
+        uses: actions/checkout@v3
+      
+      - name: PNPM Cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.pnpm
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+
+      - name: Read .nvmrc
+        run: echo "NVMRC=$(cat .nvmrc)" >> $GITHUB_OUTPUT
+        id: nvm
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "${{ steps.nvm.outputs.NVMRC }}"
+      
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        with:
+          version: latest
+
+      - name: Install libs
+        run: |
+          pnpm install --frozen-lockfile
+
+      - name: Build
+        run: |
+          pnpm run build
