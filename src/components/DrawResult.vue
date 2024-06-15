@@ -3,7 +3,7 @@
         <div class="container justify-center sm:my-6  w-screen sm:w-11/12 md:w-3/4 lg:w-1/2 xl:w-5/12 2xl:w-1/3 bg-white shadow-xl">
             <div class="container justify-center space-y-4 p-4">
                 <div class="flex flex-wrap flex-row pt-4 pb-3">
-                    <div class="basis-1/2 px-2 lg:px-8 text-left"><img src="src/assets/UEG-logo-rgb.svg" /></div>
+                    <div class="basis-1/2 px-2 lg:px-8 text-left"><img src="/src/assets/UEG-logo-rgb.svg" /></div>
                     <div class="basis-1/2 text-right">PDF417 CODE</div>
                 </div>
                 <div class="static container justify-center">
@@ -15,11 +15,11 @@
                     </div>
                     <div class="flex flex-wrap justify-center">
                         <div
-                            class="w-full pt-12 pb-8  space-y-3 bg-zinc-100 bg-ueg-gray-1 px-6 border rounded-lg border-ueg-gray-2">
+                            class="w-full pt-12 pb-8  space-y-3 bg-ueg-gray-1 px-6 border rounded-lg border-ueg-gray-2">
                             <div class="flex">
                                 <div class="flex-none -space-y-2">
                                     <div class="text-lg font-medium text-ueg-gray-3">姓名</div>
-                                    <div class="text-lg text-sm font-bold text-ueg-gray-2">Name</div>
+                                    <div class="text-sm font-bold text-ueg-gray-2">Name</div>
                                 </div>
                                 <div class="grow items-top justify-end inline-flex">
                                     <div class="uppercase text-xl text-right text-ueg-gray-3">图恒宇 / TU HENGYU</div>
@@ -29,7 +29,7 @@
                             <div class="flex ">
                                 <div class="flex-none -space-y-2">
                                     <div class="text-lg font-medium text-ueg-gray-3">身份证号码</div>
-                                    <div class="text-lg text-sm font-bold text-ueg-gray-2">ID Card</div>
+                                    <div class="text-sm font-bold text-ueg-gray-2">ID Card</div>
 
                                 </div>
                                 <div class="grow items-top justify-end inline-flex">
@@ -39,7 +39,7 @@
                             <div class="flex ">
                                 <div class="flex-none -space-y-2">
                                     <div class="text-lg font-medium text-ueg-gray-3">国籍</div>
-                                    <div class="text-lg text-sm font-bold text-ueg-gray-2">Nationality</div>
+                                    <div class="text-sm font-bold text-ueg-gray-2">Nationality</div>
 
                                 </div>
                                 <div class="grow items-top justify-end inline-flex">
@@ -49,7 +49,7 @@
                             <div class="flex ">
                                 <div class="flex-none -space-y-2">
                                     <div class="text-lg font-medium text-ueg-gray-3">抽签次数</div>
-                                    <div class="text-lg text-sm font-bold text-ueg-gray-2">No. of Draws</div>
+                                    <div class="text-sm font-bold text-ueg-gray-2">No. of Draws</div>
 
                                 </div>
                                 <div class="grow items-top justify-end inline-flex">
